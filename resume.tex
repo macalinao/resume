@@ -1,5 +1,20 @@
 \documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\hypersetup{colorlinks,urlcolor=blue}
+
+% hack into hyperref
+\makeatletter
+\DeclareUrlCommand\ULurl@@{%
+  \def\UrlFont{\ttfamily\color{blue}}%
+  \def\UrlLeft{\uline\bgroup}%
+  \def\UrlRight{\egroup}}
+\def\ULurl@#1{\hyper@linkurl{\ULurl@@{#1}}{#1}}
+\DeclareRobustCommand*\ULurl{\hyper@normalise\ULurl@}
+\makeatother
+
 \setlength{\textwidth}{5.1in} % Text width of the document
 \newcommand*{\its}{\hspace{0.8cm}}
 
@@ -7,23 +22,13 @@
 
 \moveleft.5\hoffset\centerline{\Huge\bf Ian Macalinao}
 \bigskip
-\moveleft.5\hoffset\centerline{(530) 426-2146\its{}me@ian.pw\its{}ian.pw\its{}linkedin.com/in/simplyianm\its{}github.com/simplyianm}
+\moveleft.5\hoffset\centerline{(530) 426-2146\its{}me@ian.pw\its{}\ULurl{http://ian.pw}\its{}linkedin.com/in/simplyianm\its{}github.com/simplyianm}
 
 \begin{resume}
 
-  \section{EDUCATION}
-
-  {\sl Bachelor of Science,} Neuroscience and Computer Science \\
-  University of Texas at Dallas, 2014 -- 2017 \textit{(expected)}
-  \medskip
-
-  Texas Academy of Mathematics and Science \\
-  University of North Texas, 2012 -- 2014 \\
-  3.86 GPA
-
   \section{TECHNICAL SKILLS \\ \textnormal{(in order of proficiency)}} 
 
-  {\bf Languages:} Java, JavaScript, HTML/CSS, PHP, Python, Ruby, C
+  {\bf Languages:} Java, JavaScript, HTML/CSS, PHP, Python, Ruby
 
   {\bf Technologies:} Node.js, AngularJS, Gradle, jQuery, *nix, Maven, Git, Vim, MySQL, MongoDB, \LaTeX, Redis
 
@@ -33,8 +38,15 @@
   Oakwood Software
 
   \begin{itemize} \itemsep -2pt
-    \item Developed automobile insurance software solutions using PHP/MySQL
-    \item Reworked an AJAX file upload system using jQuery and PHP, replacing a 10-year-old legacy system
+    \item Developed an AJAX file upload system using jQuery and PHP, replacing a 10-year-old legacy system
+  \end{itemize}
+
+  {\bf Founder} \hfill June 2011 -- September 2014 \\
+  Bireosoft
+
+  \begin{itemize} \itemsep -2pt
+    \item Created scalable modifications for various Minecraft servers with thousands of players, including Vox Populi, GTAHub, and New Liberty
+    \item Reverse engineered obfuscated Java via reflection and a decompiler, enabling previously impossible game features
   \end{itemize}
 
   {\bf Webmaster} \hfill 2006 -- 2012 \\
@@ -49,26 +61,27 @@
   \textbf{Syncsp.in} \hfill September 2014
 
   \begin{itemize} \itemsep -2pt
-    \item Realtime social jukebox application utilizing the Beats Music API
+    \item Realtime social jukebox application built on top of the Beats Music API
     \item Uses accelerometer of connected web clients to produce visualizations
     \item Written using AngularJS, Socket.io, and Node
-  \end{itemize}
-
-  \textbf{Stockular} \hfill September 2014
-
-  \begin{itemize} \itemsep -2pt
-    \item Google Chrome extension showing live stock data when hovering over ticker symbols on web pages; also included an Oculus Rift visualization component
-    \item Won the Bloomberg and Mashery API prizes at MHacks IV
-    \item Used Highcharts and three.js
   \end{itemize}
 
   \textbf{TripBlaze} \hfill June 2014
 
   \begin{itemize} \itemsep -2pt
     \item Trip planning web application
+    \item Reverse engineered the Tripomatic API to get data for points of interest
     \item Won the category and grand prizes at the Sabre Dev Studio Hackathon
     \item Utilized AngularJS, Node, MongoDB, and Express
   \end{itemize}
+
+  \section{EDUCATION}
+
+  Texas Academy of Mathematics and Science \\
+  University of North Texas, 2012 -- 2014 \\
+  3.86 GPA \\
+  \textit {A highly selective program for Texas students to attend college in high school}
+
 
   \section{ACTIVITIES} 
 
