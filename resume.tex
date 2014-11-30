@@ -1,4 +1,7 @@
-\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\documentclass{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage[margin=0.5in]{geometry}
+\setlength{\textwidth}{7in} % Text width of the document
 
 \usepackage{xcolor}
 \usepackage[normalem]{ulem}
@@ -15,7 +18,6 @@
 \DeclareRobustCommand*\ULurl{\hyper@normalise\ULurl@}
 \makeatother
 
-\setlength{\textwidth}{5.1in} % Text width of the document
 \newcommand*{\its}{\hspace{0.8cm}}
 
 \begin{document}
@@ -24,70 +26,68 @@
 \bigskip
 \moveleft.5\hoffset\centerline{(530) 426-2146\its{}me@ian.pw\its{}\ULurl{http://ian.pw}\its{}linkedin.com/in/simplyianm\its{}github.com/simplyianm}
 
-\begin{resume}
+\section{TECHNICAL SKILLS \\ \textnormal{(in order of proficiency)}} 
 
-  \section{TECHNICAL SKILLS \\ \textnormal{(in order of proficiency)}} 
+\begin{itemize} \itemsep -2pt
+  \item Java, JavaScript, HTML/CSS, PHP, Python, Ruby
+  \item Node.js, AngularJS, Bootstrap, Gradle, jQuery, *nix, Maven, Git, Vim, MySQL, MongoDB, \LaTeX, Redis
+\end{itemize}
 
-  {\bf Languages:} Java, JavaScript, HTML/CSS, PHP, Python, Ruby
+\section{EXPERIENCE}
 
-  {\bf Technologies:} Node.js, AngularJS, Gradle, jQuery, *nix, Maven, Git, Vim, MySQL, MongoDB, \LaTeX, Redis
+{\bf Software Developer Intern} \hfill June -- November 2014 \\
+Oakwood Software
 
-  \section{EXPERIENCE}
+\begin{itemize} \itemsep -2pt
+  \item Developed an AJAX file upload system using jQuery and PHP, replacing a 10-year-old legacy system
+\end{itemize}
 
-  {\bf Software Developer Intern} \hfill June -- November 2014 \\
-  Oakwood Software
+{\bf Bukkit Developer} \hfill June 2011 -- September 2014 \\
+Bireosoft
 
-  \begin{itemize} \itemsep -2pt
-    \item Developed an AJAX file upload system using jQuery and PHP, replacing a 10-year-old legacy system
-  \end{itemize}
+\begin{itemize} \itemsep -2pt
+  \item Created scalable modifications for Minecraft servers with thousands of players
+  \item Reverse engineered obfuscated Java via reflection and a decompiler, enabling previously impossible game features
+\end{itemize}
 
-  {\bf Bukkit Developer} \hfill June 2011 -- September 2014 \\
-  Bireosoft
+{\bf Webmaster} \hfill 2006 -- 2012 \\
+M \& R Consulting Services, Inc.
+\begin{itemize} \itemsep -2pt
+  \item Created a denial management workflow system to handle sourced appeals for denied cases
+  \item Used PHP, MySQL, and HTML/CSS
+\end{itemize} 
 
-  \begin{itemize} \itemsep -2pt
-    \item Created scalable modifications for various Minecraft servers with thousands of players, including Vox Populi, GTAHub, and New Liberty
-    \item Reverse engineered obfuscated Java via reflection and a decompiler, enabling previously impossible game features
-  \end{itemize}
+\section{PROJECTS}
 
-  {\bf Webmaster} \hfill 2006 -- 2012 \\
-  M \& R Consulting Services, Inc.
-  \begin{itemize} \itemsep -2pt
-    \item Created a denial management workflow system to handle sourced appeals for denied cases
-    \item Used PHP, MySQL, and HTML/CSS
-  \end{itemize} 
+\textbf{Preston} -- Open-source Node.js framework to automatically generate REST routes for Mongoose models
 
-  \section{PROJECTS}
+\textbf{HotTrade} -- Tinder for stocks: build a portfolio by selecting stocks and track portfolio performance; won Bloomberg prize at HackPrinceton
 
-  \textbf{Syncsp.in} \hfill September 2014
+\textbf{Kerve} -- Exercise tracker using Kinect/AngularJS to determine body position and count reps; won Kinect/Mashery prizes at HackSC
 
-  \begin{itemize} \itemsep -2pt
-    \item Realtime social jukebox application built on top of the Beats Music API
-    \item Uses accelerometer of connected web clients to produce visualizations
-    \item Written using AngularJS, Socket.io, and Node
-  \end{itemize}
+\textbf{Backtesting.me} -- Java application to test a stock's historical performance; won Bloomberg prize at HackTX
 
-  \textbf{TripBlaze} \hfill June 2014
+\textbf{Bordering.me} -- Holographic display of conflict in the world built using WebGL; won Google prize at HackMIT
 
-  \begin{itemize} \itemsep -2pt
-    \item Trip planning web application
-    \item Reverse engineered the Tripomatic API to get data for points of interest
-    \item Won the category and grand prizes at the Sabre Dev Studio Hackathon
-    \item Utilized AngularJS, Node, MongoDB, and Express
-  \end{itemize}
+\textbf{Syncsp.in} -- Realtime social jukebox application built on the Beats Music API using MEAN/Socket.io; won Mashery API prize at HackGT
 
-  \section{EDUCATION}
+\textbf{Stockular} -- Chrome extension to view extended stock information when hovering over a ticker symbol on a webpage; won Bloomberg/Mashery prizes at MHacks
 
-  Bachelor of Science, Computer Science \\
-  University of Texas at Dallas, 2014 -- Present \textit {(expected 2016)} \\
+\textbf{TripBlaze} -- Interactive trip planning web application using MEAN; won grand prize at Sabre Dev Studio Hackathon
 
-  \section{ACTIVITIES} 
+\section{EDUCATION}
 
-  \begin{itemize} \itemsep -2pt
-    \item 2014 -- Present -- \textbf{Various hackathons}, including PennApps X, MHacks IV, HackGT, and HackMIT
-    \item 2014 -- Present -- \textbf{Vice President} of UTD Hackers
-    \item 2012 -- 2014 -- \textbf{Member/President} of TAMS Computer Science Organization
-    \item 2012 -- 2014 -- \textbf{Member/Treasurer} of TAMS Ham Radio Club
-  \end{itemize}
+Bachelor of Science, Computer Science \\
+University of Texas at Dallas, 2014 -- 2016 \textit {(expected)} \\
+3.86 GPA
 
-\end{resume}
+\section{ACTIVITIES} 
+
+\begin{itemize} \itemsep -2pt
+  \item 2014 -- Present -- \textbf{Various hackathons}, including PennApps X, MHacks IV, HackGT, and HackMIT
+  \item 2014 -- Present -- \textbf{Co-director} of HackDFW, DFW's first collegiate hackathon
+  \item 2014 -- Present -- \textbf{Vice President} of UTD Hackers
+  \item 2012 -- 2014 -- \textbf{Member/President} of TAMS Computer Science Organization
+\end{itemize}
+
 \end{document}
